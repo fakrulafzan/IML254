@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Fakrul Portal</title>
+
+    <!-- Add any CSS links or stylesheets here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+ <style>
+
+ .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+        /* Button image styles */
+        #infoButton {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        #infoButton img {
+            width: 300px; 
+            height: auto;
+        }
+
+
+        /* Information box styles */
+        #infoBox {
+            display: none;
+            border: 2px solid #333;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 400px;
+            background-color: #F7DC6F;
+            text-align: center;
+        }
+        #infoBox.show {
+            display: block;
+        }
+ 
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>UNIVERSITY🎓</h1>
+    </header>
+
+<!-- Separate navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="me.html">Me ♡</a>
+                    <a href="father.html">My Father</a>
+                    <a href="mommy.html">My Mommy</a>
+                    <a href="sister.html">My Sister</a>
+                    <a href="brother.html">My Brother</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Education <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="primary.html">Primary School</a>
+                    <a href="secondary.html">Secondary School</a>
+                    <a href="university.html">University</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Gallery <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+		    <a href="myphoto.html">Me</a>
+                    <a href="raya.html">Raya Photo</a>
+                    <a href="uni.html">Uni Life</a>
+                    <a href="childhood.html">Childhood</a>
+                </div>
+            </li>
+            <li><a href="hobby.html">Interest</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <button id="infoButton" onclick="toggleInfo()">
+            <img src="images/uitm.png" alt="UiTM">
+        </button>
+        <div id="infoBox" class="infoBox" style="background: #8E44AD";>
+            <h2><font color="black">UNIVERSITI TEKNOLOGI MARA (UiTM), KEDAH BRANCH</font></h2>
+            <p>DIPLOMA IN INFORMATICS LIBRARY</p>
+            <p>5 SEMESTER (2022-2025)</p>
+	    <P>CURRENT CGPA: 3.46</p>
+            <p>DEANS AWARD FOR 3.5 GPA</p>
+            <p>INDELIB COMPETITION 2023, UiTM KEDAH (SILVER)</p>
+        </div>
+    </div>
+</div>
+    <footer>
+        <!-- Add footer content such as copyright information -->
+        <p>&copy; 2024 Fakrul Shua. All rights reserved.</p>
+	<p>The display in this system is optimal when using Google Chrome and Microsoft Edge with a screen resolution of 1920 x 1080 for desktops or laptops. The display resolution for phones is 768px and for tablets is 1920px.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

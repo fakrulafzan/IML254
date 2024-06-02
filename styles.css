@@ -1,0 +1,441 @@
+/* Default styles (desktop/laptop) */
+body {
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Tablet styles */
+@media (max-width: 1920px) {
+    body {
+        font-size: 14px;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+}
+
+/* Phone styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        background-color: #eee;
+        color: #666;
+    }
+}
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-image: url('images/header.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    position: relative; 
+}
+
+header::after {
+    content: "";
+    background: #34495E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+
+
+/* Navigation styles */
+nav {
+    background-color: #5D6D7E;
+    padding: 10px 20px;
+    text-align: left; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #273746;
+}
+
+/* Content styles */
+.content {
+    flex: 1;
+    background-color: #273746; 
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #34495E;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* CSS for Slideshow and Picture */
+.slideshow-and-picture {
+    display: flex; 
+    align-items: center; 
+    background-color: #273746;
+    padding-left: 40px;
+}
+
+.slideshow-container {
+    flex: 1;
+}
+
+.mySlides {
+    display: none; 
+}
+
+.mySlides img {
+    width: 80%; 
+    height: auto; 
+}
+
+/* CSS for Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.image,
+.slideshow-container {
+    flex: 1; 
+}
+
+/* Style the video to be the same size as images */
+#myVideo {
+    width: 80%;
+    height: auto;
+}
+
+/* Hide the default video controls */
+#myVideo::-webkit-media-controls {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* CSS for "HOME SECTION" */
+.home {
+    background-color: #273746; 
+    color: #ffffff; 
+    padding: 110px 0 50px; 
+    text-align: left; 
+}
+
+.home-content {
+    margin-top: -185px; 
+}
+
+/* CSS for Picture */
+img {
+    max-width: 80%; 
+    height: auto; 
+}
+
+/* CSS for Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS for font controls */
+#font-controls {
+    margin-top: -20px; 
+    text-align: right;
+}
+
+#font-controls button {
+    margin: 0 5px; 
+    background-color: #99A3A4;
+    border: none;
+    color: black;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#font-controls button:hover {
+    background-color: #FCF3CF; 
+
+}
+
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); 
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #85929E
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* CSS for custom box */
+.custom-box {
+    width: 200px;
+    height: 200px;
+    background-color: #273746;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+}
+
+/* Floating button container */
+.social-btn-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/* Fancy button style */
+.social-btn {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #4267B2; 
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Social media icon */
+.social-btn i {
+  margin-right: 20px;
+}
+
+/* Different colors for different social media */
+.social-btn.facebook { background-color: #4267B2; }
+.social-btn.instagram { background-color: #E4405F; }
+.social-btn.tiktok { background-color: #000; color: #fff; }
+.social-btn.whatsapp { background-color: #25D366; }
+.social-btn.gmail { background-color: #EA4335; }
+.social-btn.snapchat { background-color: #FFFC00; }
+.social-btn.github { background-color: #333; color: #fff; }
+.social-btn.youtube{ background-color: #FF0000; }
+
+        /* Style the slideshow container */
+      /* Gallery container styles */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Product spotlight styles */
+.product-spotlight {
+    position: relative;
+    width: 80%; /* Adjust width as needed */
+}
+
+.product-spotlight img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnails button.prev-btn,
+.thumbnails button.next-btn {
+    background-color: rgb(255, 255, 255, 0.7); 
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; 
+}
+
+.thumbnails button.prev-btn:hover,
+.thumbnails button.next-btn:hover {
+    opacity: 0.8; 
+}
+.content {
+    padding: 20px 50px;
+}
+
+.segment {
+    margin-bottom: 30px;
+}
+
+.segment h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/*video collection*/
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video video {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+}
+
+
+.video video:hover {
+    transform: scale(1.05);
+}
+
+.video:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*experience button*/
+.experience-btn {
+    padding: 20px 60px;
+    width: 300px;
+    height: 200px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.experience-btn.large {
+    padding: 25px 50px; 
+    font-size: 28px; 
+}
+
+.experience-btn.transparent {
+    border: 2px solid #fff;
+}
+
+.experience-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*table*/
+
+        .biodata-table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 70%;
+        }
+        .biodata-table th, .biodata-table td {
+            border: 1px solid black;
+            padding: 8px;
+	    text-align: left;
+        }
+        .biodata-table th {
+            background-color: beige;
+         
+        }
+        h2 {
+            text-align: center;
+        }
+

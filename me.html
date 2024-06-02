@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Fakrul Portal</title>
+
+    <!-- Add any CSS links or stylesheets here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+
+    .custom-box {
+        width: 1150px; 
+        height: 50px; 
+        background-color: #D4EFDF;
+	color: black;
+        border: 2px solid #ccc;
+        padding: 50px; 
+        box-sizing: border-box; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        font-size: 23px; 
+        line-height: 1.5;
+    }
+
+    .custom-box p {
+        margin: 0;
+        text-align: top;
+    }
+
+        .button {
+            padding: 10px 20px;
+            background-color: beige; 
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        .button:hover {
+            background-color: #5D6D7E;
+        }
+
+
+        .message-box {
+            display: none;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EXPLORE MORE ABOUT ME</h1>
+        <font face="space mono">"am i introvert?"</font>
+    </header>
+
+
+<!-- Separate navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="me.html">Me ♡</a>
+                    <a href="father.html">My Father</a>
+                    <a href="mommy.html">My Mommy</a>
+                    <a href="sister.html">My Sister</a>
+                    <a href="brother.html">My Brother</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Education <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="primary.html">Primary School</a>
+                    <a href="secondary.html">Secondary School</a>
+                    <a href="university.html">University</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Gallery <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+		    <a href="myphoto.html">Me</a>
+                    <a href="raya.html">Raya Photo</a>
+                    <a href="uni.html">Uni Life</a>
+                    <a href="childhood.html">Childhood</a>
+                </div>
+            </li>
+            <li><a href="hobby.html">Interest</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<div class="content">
+
+<iframe width="900" height="525" src="https://www.youtube.com/embed/mkANAXZym0g?si=VMl_Trb4zA0gA7mw" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen></iframe>
+
+<br><br><br>
+
+<h4>"please play the song before you jump to my biodata!"<h4>
+
+<!--background music-->
+<button onclick="document.getElementById('audio').play()">Play Me</button>
+<audio id="audio" src="audio/introariana.mp3"></audio>
+
+<br><br><br>
+<a href="#biodata"><img src="images/mybio.png"></a>
+
+<br><br><br><br>
+<a name="biodata"></a>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>PLEASE SCROLL DOWN!</h2>
+<br>
+<h2>more love huhu</h2>
+<br>
+<h2>more love huhu</h2>
+<br>
+<h2>more love huhu</h2>
+<br>
+<h2>more love huhu</h2>
+<br><br>
+
+    <button class="button" onclick="toggleMessage()">hit me slowly</button>
+
+    <!-- Kotak pesan -->
+    <div class="message-box" id="messageBox">
+        <p class="message">Hi! I am Fakrul Afzan huhu. My full name is Muhammad Fakrul Afzan.. if you want to know my father name go visit his page! wkwkwkw jkjk... My father name is Khairul Anuar and all information about him i put on his diary pages okay... 
+	I was born on 19 June 2004 at Jitra Hospital, Kedah. I live at Kampung Tradisi, Changlun Kedah. Hmmm for my hobbie or interest go check it out on interest page chingu!!
+	<br>
+	To be honest, I'm not the person who always be happy. People always see me being happy go lucky like I have no problems in my life, but their are wrong! i always hide it with a smile and let everyone don't know about my problem.
+	If you ask me "Are you extrovert or introvert?," i will answer you "I'm Ambivert" haha. Actually, i don't know how to describe myself, but i will try the best to introduce you about myself. Being human is not easy. 
+	Facing so much challenge and need to be strongest to survive. Luckly I have the best supporter that have been support me since I was child. My sister is the only one who always heard about my problem until now. 
+	She is very supportive and always help me when I'm feel down and stress. I wish I can be a good brother to her hahaha.... If you guys wonder to watch my ambivert life, go checkout my video collection section! Thankyou and Bye! heart heart! BTBT! LUSM!!</p>
+    </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+    <footer>
+        <!-- Add footer content such as copyright information -->
+        <p>&copy; 2024 Fakrul Shua. All rights reserved.</p>
+	<p>The display in this system is optimal when using Google Chrome and Microsoft Edge with a screen resolution of 1920 x 1080 for desktops or laptops. The display resolution for phones is 768px and for tablets is 1920px.</p>
+
+    </footer>
+
+</body>
+</html>
